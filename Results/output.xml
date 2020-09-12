@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.2 on linux)" generated="20200912 08:43:39.673" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.8.2 on linux)" generated="20200912 09:15:48.138" rpa="false">
 <suite id="s1" name="Tests" source="/home/hungt/repos/robotframework/api-example/Tests">
 <suite id="s1-s1" name="Contract Driven" source="/home/hungt/repos/robotframework/api-example/Tests/contract_driven.robot">
 <test id="s1-s1-t1" name="Valid user">
@@ -11,9 +11,9 @@
 <arguments>
 <arg>/users/1</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:39.870" endtime="20200912 08:43:40.072"></status>
+<status status="PASS" starttime="20200912 09:15:48.335" endtime="20200912 09:15:48.544"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:39.870" endtime="20200912 08:43:40.072" critical="yes"></status>
+<status status="PASS" starttime="20200912 09:15:48.334" endtime="20200912 09:15:48.544" critical="yes"></status>
 </test>
 <test id="s1-s1-t2" name="New user">
 <kw name="Post" library="REST">
@@ -25,9 +25,9 @@
 <arg>/users</arg>
 <arg>${EXECDIR}/json_repository/user.json</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:40.073" endtime="20200912 08:43:40.711"></status>
+<status status="PASS" starttime="20200912 09:15:48.544" endtime="20200912 09:15:49.172"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:40.072" endtime="20200912 08:43:40.712" critical="yes"></status>
+<status status="PASS" starttime="20200912 09:15:48.544" endtime="20200912 09:15:49.173" critical="yes"></status>
 </test>
 <test id="s1-s1-t3" name="Edit user">
 <kw name="Put" library="REST">
@@ -39,9 +39,9 @@
 <arg>/users/1</arg>
 <arg>${EXECDIR}/json_repository/user.json</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:40.714" endtime="20200912 08:43:41.361"></status>
+<status status="PASS" starttime="20200912 09:15:49.175" endtime="20200912 09:15:50.184"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:40.712" endtime="20200912 08:43:41.362" critical="yes"></status>
+<status status="PASS" starttime="20200912 09:15:49.174" endtime="20200912 09:15:50.184" critical="yes"></status>
 </test>
 <test id="s1-s1-t4" name="Edit email">
 <kw name="Patch" library="REST">
@@ -53,9 +53,9 @@
 <arg>/users/2</arg>
 <arg>{ "email": "ismo.aro@robotframework.dev" }</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:41.364" endtime="20200912 08:43:42.218"></status>
+<status status="PASS" starttime="20200912 09:15:50.187" endtime="20200912 09:15:51.003"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:41.363" endtime="20200912 08:43:42.219" critical="yes"></status>
+<status status="PASS" starttime="20200912 09:15:50.185" endtime="20200912 09:15:51.003" critical="yes"></status>
 </test>
 <test id="s1-s1-t5" name="Delete">
 <kw name="Delete" library="REST">
@@ -66,7 +66,7 @@
 <arguments>
 <arg>/users/10</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:42.221" endtime="20200912 08:43:42.963"></status>
+<status status="PASS" starttime="20200912 09:15:51.006" endtime="20200912 09:15:51.892"></status>
 </kw>
 <kw name="Output" library="REST">
 <tags>
@@ -76,11 +76,11 @@
 <arguments>
 <arg>$</arg>
 </arguments>
-<msg timestamp="20200912 08:43:42.965" level="INFO">
+<msg timestamp="20200912 09:15:51.893" level="INFO">
 {}</msg>
-<status status="PASS" starttime="20200912 08:43:42.964" endtime="20200912 08:43:42.981"></status>
+<status status="PASS" starttime="20200912 09:15:51.892" endtime="20200912 09:15:51.909"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:42.220" endtime="20200912 08:43:42.981" critical="yes"></status>
+<status status="PASS" starttime="20200912 09:15:51.004" endtime="20200912 09:15:51.910" critical="yes"></status>
 </test>
 <test id="s1-s1-t6" name="Valid users">
 <kw name="Get" library="REST">
@@ -91,11 +91,11 @@
 <arguments>
 <arg>/users</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:42.983" endtime="20200912 08:43:43.704"></status>
+<status status="PASS" starttime="20200912 09:15:51.912" endtime="20200912 09:15:52.132"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:42.982" endtime="20200912 08:43:43.704" critical="yes"></status>
+<status status="PASS" starttime="20200912 09:15:51.911" endtime="20200912 09:15:52.132" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200912 08:43:39.694" endtime="20200912 08:43:43.706"></status>
+<status status="PASS" starttime="20200912 09:15:48.159" endtime="20200912 09:15:52.134"></status>
 </suite>
 <suite id="s1-s2" name="Model Based" source="/home/hungt/repos/robotframework/api-example/Tests/model_based.robot">
 <kw name="Expect Response Body" library="REST" type="setup">
@@ -106,7 +106,7 @@
 <arguments>
 <arg>${EXECDIR}/json_repository/model.json</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:43.717" endtime="20200912 08:43:43.718"></status>
+<status status="PASS" starttime="20200912 09:15:52.146" endtime="20200912 09:15:52.147"></status>
 </kw>
 <test id="s1-s2-t1" name="Valid user">
 <kw name="Get" library="REST">
@@ -117,7 +117,7 @@
 <arguments>
 <arg>/users/1</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:43.718" endtime="20200912 08:43:43.887"></status>
+<status status="PASS" starttime="20200912 09:15:52.147" endtime="20200912 09:15:52.324"></status>
 </kw>
 <kw name="String" library="REST">
 <tags>
@@ -128,9 +128,9 @@
 <arg>$.email</arg>
 <arg>format=email</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:43.888" endtime="20200912 08:43:43.941"></status>
+<status status="PASS" starttime="20200912 09:15:52.325" endtime="20200912 09:15:52.380"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:43.718" endtime="20200912 08:43:43.941" critical="yes"></status>
+<status status="PASS" starttime="20200912 09:15:52.147" endtime="20200912 09:15:52.381" critical="yes"></status>
 </test>
 <test id="s1-s2-t2" name="New user">
 <kw name="Post" library="REST">
@@ -142,9 +142,9 @@
 <arg>/users</arg>
 <arg>${EXECDIR}/json_repository/user.json</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:43.942" endtime="20200912 08:43:44.603"></status>
+<status status="PASS" starttime="20200912 09:15:52.381" endtime="20200912 09:15:53.015"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:43.941" endtime="20200912 08:43:44.604" critical="yes"></status>
+<status status="PASS" starttime="20200912 09:15:52.381" endtime="20200912 09:15:53.016" critical="yes"></status>
 </test>
 <test id="s1-s2-t3" name="Edit user">
 <kw name="Put" library="REST">
@@ -156,9 +156,9 @@
 <arg>/users/1</arg>
 <arg>${EXECDIR}/json_repository/user.json</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:44.606" endtime="20200912 08:43:45.526"></status>
+<status status="PASS" starttime="20200912 09:15:53.018" endtime="20200912 09:15:53.869"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:44.605" endtime="20200912 08:43:45.526" critical="yes"></status>
+<status status="PASS" starttime="20200912 09:15:53.017" endtime="20200912 09:15:53.869" critical="yes"></status>
 </test>
 <test id="s1-s2-t4" name="Edit email">
 <kw name="Patch" library="REST">
@@ -170,9 +170,9 @@
 <arg>/users/2</arg>
 <arg>{ "email": "ismo.aro@robotframework.dev" }</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:45.529" endtime="20200912 08:43:46.177"></status>
+<status status="PASS" starttime="20200912 09:15:53.871" endtime="20200912 09:15:54.584"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:45.527" endtime="20200912 08:43:46.178" critical="yes"></status>
+<status status="PASS" starttime="20200912 09:15:53.870" endtime="20200912 09:15:54.585" critical="yes"></status>
 </test>
 <test id="s1-s2-t5" name="Delete">
 <kw name="Expect Response Body" library="REST">
@@ -183,7 +183,7 @@
 <arguments>
 <arg>{ "required": [] }</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:46.180" endtime="20200912 08:43:46.181"></status>
+<status status="PASS" starttime="20200912 09:15:54.587" endtime="20200912 09:15:54.588"></status>
 </kw>
 <kw name="Delete" library="REST">
 <tags>
@@ -193,9 +193,9 @@
 <arguments>
 <arg>/users/10</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:46.181" endtime="20200912 08:43:47.033"></status>
+<status status="PASS" starttime="20200912 09:15:54.588" endtime="20200912 09:15:55.300"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:46.179" endtime="20200912 08:43:47.033" critical="yes"></status>
+<status status="PASS" starttime="20200912 09:15:54.586" endtime="20200912 09:15:55.300" critical="yes"></status>
 </test>
 <test id="s1-s2-t6" name="Valid users">
 <kw name="Clear Expectations" library="REST">
@@ -203,7 +203,7 @@
 <tag>expectations</tag>
 </tags>
 <doc>*Resets the expectations for both request and response.*</doc>
-<status status="PASS" starttime="20200912 08:43:47.035" endtime="20200912 08:43:47.035"></status>
+<status status="PASS" starttime="20200912 09:15:55.302" endtime="20200912 09:15:55.303"></status>
 </kw>
 <kw name="Get" library="REST">
 <tags>
@@ -213,7 +213,7 @@
 <arguments>
 <arg>/users</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:47.035" endtime="20200912 08:43:47.206"></status>
+<status status="PASS" starttime="20200912 09:15:55.303" endtime="20200912 09:15:56.005"></status>
 </kw>
 <kw name="Array" library="REST">
 <tags>
@@ -225,7 +225,7 @@
 <arg>minItems=1</arg>
 <arg>maxItems=10</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:47.207" endtime="20200912 08:43:47.215"></status>
+<status status="PASS" starttime="20200912 09:15:56.005" endtime="20200912 09:15:56.013"></status>
 </kw>
 <kw name="Integer" library="REST">
 <tags>
@@ -236,11 +236,11 @@
 <arg>$[*].id</arg>
 <arg>maximum=10</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:47.215" endtime="20200912 08:43:47.253"></status>
+<status status="PASS" starttime="20200912 09:15:56.013" endtime="20200912 09:15:56.049"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:47.034" endtime="20200912 08:43:47.253" critical="yes"></status>
+<status status="PASS" starttime="20200912 09:15:55.301" endtime="20200912 09:15:56.049" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200912 08:43:43.709" endtime="20200912 08:43:47.254"></status>
+<status status="PASS" starttime="20200912 09:15:52.137" endtime="20200912 09:15:56.050"></status>
 </suite>
 <suite id="s1-s3" name="Requests Lib" source="/home/hungt/repos/robotframework/api-example/Tests/requests_lib.robot">
 <kw name="Create Session" library="req" type="setup">
@@ -249,8 +249,8 @@
 <arg>typicode</arg>
 <arg>https://jsonplaceholder.typicode.com</arg>
 </arguments>
-<msg timestamp="20200912 08:43:47.271" level="INFO">Creating Session using : alias=typicode, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20200912 08:43:47.270" endtime="20200912 08:43:47.271"></status>
+<msg timestamp="20200912 09:15:56.067" level="INFO">Creating Session using : alias=typicode, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20200912 09:15:56.067" endtime="20200912 09:15:56.067"></status>
 </kw>
 <test id="s1-s3-t1" name="requests: Should have a name and belong to a company with a slogan">
 <kw name="Get Request" library="req">
@@ -263,12 +263,12 @@ given `alias`</doc>
 <assign>
 <var>${resp}</var>
 </assign>
-<msg timestamp="20200912 08:43:47.427" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/1 
+<msg timestamp="20200912 09:15:56.227" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/1 
  path_url=/users/1 
  headers={'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20200912 08:43:47.428" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/1 
+<msg timestamp="20200912 09:15:56.229" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/1 
  status=200, reason=OK 
  body={
   "id": 1,
@@ -294,10 +294,10 @@ given `alias`</doc>
   }
 } 
  </msg>
-<msg timestamp="20200912 08:43:47.429" level="INFO">/home/hungt/repos/robotframework/api-example/venv/lib/python3.8/site-packages/urllib3/connectionpool.py:981: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+<msg timestamp="20200912 09:15:56.229" level="INFO">/home/hungt/repos/robotframework/api-example/venv/lib/python3.8/site-packages/urllib3/connectionpool.py:981: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20200912 08:43:47.430" level="INFO">${resp} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20200912 08:43:47.271" endtime="20200912 08:43:47.430"></status>
+<msg timestamp="20200912 09:15:56.230" level="INFO">${resp} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20200912 09:15:56.068" endtime="20200912 09:15:56.230"></status>
 </kw>
 <kw name="Reponse Status Code Should Be">
 <arguments>
@@ -310,12 +310,12 @@ given `alias`</doc>
 <arg>${response.status_code}</arg>
 <arg>${expected_code}</arg>
 </arguments>
-<msg timestamp="20200912 08:43:47.432" level="INFO">Argument types are:
+<msg timestamp="20200912 09:15:56.233" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20200912 08:43:47.431" endtime="20200912 08:43:47.432"></status>
+<status status="PASS" starttime="20200912 09:15:56.232" endtime="20200912 09:15:56.233"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:47.430" endtime="20200912 08:43:47.432"></status>
+<status status="PASS" starttime="20200912 09:15:56.230" endtime="20200912 09:15:56.233"></status>
 </kw>
 <kw name="Reponse Json Field Value Should Be">
 <arguments>
@@ -332,8 +332,8 @@ given `alias`</doc>
 <assign>
 <var>${extract_value}</var>
 </assign>
-<msg timestamp="20200912 08:43:47.435" level="INFO">${extract_value} = Leanne Graham</msg>
-<status status="PASS" starttime="20200912 08:43:47.434" endtime="20200912 08:43:47.435"></status>
+<msg timestamp="20200912 09:15:56.236" level="INFO">${extract_value} = Leanne Graham</msg>
+<status status="PASS" starttime="20200912 09:15:56.235" endtime="20200912 09:15:56.236"></status>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -341,9 +341,9 @@ given `alias`</doc>
 <arg>${extract_value}</arg>
 <arg>${expected_value}</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:47.435" endtime="20200912 08:43:47.435"></status>
+<status status="PASS" starttime="20200912 09:15:56.237" endtime="20200912 09:15:56.238"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:47.433" endtime="20200912 08:43:47.436"></status>
+<status status="PASS" starttime="20200912 09:15:56.234" endtime="20200912 09:15:56.238"></status>
 </kw>
 <kw name="Reponse Json Object's Field Value Should Be">
 <arguments>
@@ -361,8 +361,8 @@ given `alias`</doc>
 <assign>
 <var>${object_value}</var>
 </assign>
-<msg timestamp="20200912 08:43:47.438" level="INFO">${object_value} = {'name': 'Romaguera-Crona', 'catchPhrase': 'Multi-layered client-server neural-net', 'bs': 'harness real-time e-markets'}</msg>
-<status status="PASS" starttime="20200912 08:43:47.437" endtime="20200912 08:43:47.438"></status>
+<msg timestamp="20200912 09:15:56.241" level="INFO">${object_value} = {'name': 'Romaguera-Crona', 'catchPhrase': 'Multi-layered client-server neural-net', 'bs': 'harness real-time e-markets'}</msg>
+<status status="PASS" starttime="20200912 09:15:56.240" endtime="20200912 09:15:56.241"></status>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
@@ -373,8 +373,8 @@ given `alias`</doc>
 <assign>
 <var>${object_field_value}</var>
 </assign>
-<msg timestamp="20200912 08:43:47.439" level="INFO">${object_field_value} = Multi-layered client-server neural-net</msg>
-<status status="PASS" starttime="20200912 08:43:47.438" endtime="20200912 08:43:47.439"></status>
+<msg timestamp="20200912 09:15:56.243" level="INFO">${object_field_value} = Multi-layered client-server neural-net</msg>
+<status status="PASS" starttime="20200912 09:15:56.242" endtime="20200912 09:15:56.243"></status>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -382,9 +382,9 @@ given `alias`</doc>
 <arg>${object_field_value}</arg>
 <arg>${expected_value}</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:47.439" endtime="20200912 08:43:47.440"></status>
+<status status="PASS" starttime="20200912 09:15:56.243" endtime="20200912 09:15:56.244"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:47.436" endtime="20200912 08:43:47.440"></status>
+<status status="PASS" starttime="20200912 09:15:56.238" endtime="20200912 09:15:56.244"></status>
 </kw>
 <kw name="Dumps" library="json">
 <doc>Serialize ``obj`` to a JSON formatted ``str``.</doc>
@@ -395,7 +395,7 @@ given `alias`</doc>
 <assign>
 <var>${json}</var>
 </assign>
-<msg timestamp="20200912 08:43:47.441" level="INFO">${json} = {
+<msg timestamp="20200912 09:15:56.246" level="INFO">${json} = {
     "id": 1,
     "name": "Leanne Graham",
     "username": "Bret",
@@ -404,23 +404,23 @@ given `alias`</doc>
         "street": "Kulas Light",
         "suite": "Apt. 556",
         "city": "Gw...</msg>
-<status status="PASS" starttime="20200912 08:43:47.440" endtime="20200912 08:43:47.441"></status>
+<status status="PASS" starttime="20200912 09:15:56.245" endtime="20200912 09:15:56.247"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${json}</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:47.442" endtime="20200912 08:43:47.442"></status>
+<status status="PASS" starttime="20200912 09:15:56.247" endtime="20200912 09:15:56.248"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:47.271" endtime="20200912 08:43:47.443" critical="yes"></status>
+<status status="PASS" starttime="20200912 09:15:56.067" endtime="20200912 09:15:56.248" critical="yes"></status>
 </test>
 <kw name="Delete All Sessions" library="req" type="teardown">
 <doc>Removes all the session objects</doc>
-<msg timestamp="20200912 08:43:47.444" level="INFO">Delete All Sessions</msg>
-<status status="PASS" starttime="20200912 08:43:47.443" endtime="20200912 08:43:47.444"></status>
+<msg timestamp="20200912 09:15:56.250" level="INFO">Delete All Sessions</msg>
+<status status="PASS" starttime="20200912 09:15:56.250" endtime="20200912 09:15:56.251"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:47.255" endtime="20200912 08:43:47.444"></status>
+<status status="PASS" starttime="20200912 09:15:56.051" endtime="20200912 09:15:56.251"></status>
 </suite>
 <suite id="s1-s4" name="Rest Instance Lib" source="/home/hungt/repos/robotframework/api-example/Tests/rest_instance_lib.robot">
 <test id="s1-s4-t1" name="RESTinstance: Should have a name and belong to a company with a slogan">
@@ -432,7 +432,7 @@ given `alias`</doc>
 <arguments>
 <arg>/users/1</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:47.450" endtime="20200912 08:43:48.169"></status>
+<status status="PASS" starttime="20200912 09:15:56.260" endtime="20200912 09:15:56.432"></status>
 </kw>
 <kw name="Reponse Status Code Should Be">
 <arguments>
@@ -447,9 +447,9 @@ given `alias`</doc>
 <arg>response status</arg>
 <arg>${expected_code}</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:48.171" endtime="20200912 08:43:48.177"></status>
+<status status="PASS" starttime="20200912 09:15:56.434" endtime="20200912 09:15:56.435"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:48.169" endtime="20200912 08:43:48.178"></status>
+<status status="PASS" starttime="20200912 09:15:56.433" endtime="20200912 09:15:56.436"></status>
 </kw>
 <kw name="Reponse Field Value Should Be">
 <arguments>
@@ -465,9 +465,9 @@ given `alias`</doc>
 <arg>${json_path}</arg>
 <arg>${expected_value}</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:48.180" endtime="20200912 08:43:48.249"></status>
+<status status="PASS" starttime="20200912 09:15:56.437" endtime="20200912 09:15:56.473"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:48.178" endtime="20200912 08:43:48.250"></status>
+<status status="PASS" starttime="20200912 09:15:56.436" endtime="20200912 09:15:56.473"></status>
 </kw>
 <kw name="Reponse Field Value Should Be">
 <arguments>
@@ -483,9 +483,9 @@ given `alias`</doc>
 <arg>${json_path}</arg>
 <arg>${expected_value}</arg>
 </arguments>
-<status status="PASS" starttime="20200912 08:43:48.250" endtime="20200912 08:43:48.273"></status>
+<status status="PASS" starttime="20200912 09:15:56.473" endtime="20200912 09:15:56.493"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:48.250" endtime="20200912 08:43:48.273"></status>
+<status status="PASS" starttime="20200912 09:15:56.473" endtime="20200912 09:15:56.493"></status>
 </kw>
 <kw name="Output" library="REST">
 <tags>
@@ -495,7 +495,7 @@ given `alias`</doc>
 <arguments>
 <arg>$</arg>
 </arguments>
-<msg timestamp="20200912 08:43:48.273" level="INFO">
+<msg timestamp="20200912 09:15:56.494" level="INFO">
 {
     "id": 1,
     "name": "Leanne Graham",
@@ -519,13 +519,13 @@ given `alias`</doc>
         "bs": "harness real-time e-markets"
     }
 }</msg>
-<status status="PASS" starttime="20200912 08:43:48.273" endtime="20200912 08:43:48.274"></status>
+<status status="PASS" starttime="20200912 09:15:56.494" endtime="20200912 09:15:56.494"></status>
 </kw>
-<status status="PASS" starttime="20200912 08:43:47.449" endtime="20200912 08:43:48.274" critical="yes"></status>
+<status status="PASS" starttime="20200912 09:15:56.259" endtime="20200912 09:15:56.495" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200912 08:43:47.445" endtime="20200912 08:43:48.275"></status>
+<status status="PASS" starttime="20200912 09:15:56.253" endtime="20200912 09:15:56.495"></status>
 </suite>
-<status status="PASS" starttime="20200912 08:43:39.674" endtime="20200912 08:43:48.277"></status>
+<status status="PASS" starttime="20200912 09:15:48.139" endtime="20200912 09:15:56.496"></status>
 </suite>
 <statistics>
 <total>

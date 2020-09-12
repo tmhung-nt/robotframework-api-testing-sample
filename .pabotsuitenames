@@ -1,0 +1,8 @@
+datasources:50c51290f63dd7fcfec26fc1d1dc08f029813bda
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:1d03abb66dfc2ec5293eab344e7b7b4ad0cba617
+--suite Tests.Contract Driven
+--suite Tests.Model Based
+--suite Tests.Requests Lib
+--suite Tests.Rest Instance Lib
